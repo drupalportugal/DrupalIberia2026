@@ -1,0 +1,15 @@
+uuid: 07f7b7c2-1463-4bc4-a717-0a29c33f81b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: es
+label: Español
+direction: ltr
+weight: -9
+locked: false

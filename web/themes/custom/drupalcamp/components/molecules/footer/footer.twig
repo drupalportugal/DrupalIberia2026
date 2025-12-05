@@ -1,0 +1,27 @@
+<footer role="contentinfo" class="footer">
+  <div class="footer__top">
+    <p class="footer__top__title h3">{{ 'Acknowledgements'|t }}</p>
+    <div class="footer__top__logos">
+      <a href="http://www.drupal.pt/" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/drupalpt.svg' }}" alt="Associação Drupal Portugal">
+      </a>
+      <a href="https://asociaciondrupal.es/" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/aed.svg' }}" alt="Asociación Española de Drupal">
+      </a>
+      <a href="https://www.startupbraga.com/" target="_blank">
+        <img src="{{ '/' ~ directory ~ '/images/acknowledgements/startup-braga.png' }}" alt="Startup Braga">
+      </a>
+    </div>
+  </div>
+  <div class="footer__pre-links">
+    <div class="footer__logo">
+      <img src="{{ '/' ~ directory ~ '/logo-white.svg' }}" alt="DrupalCamp Santiago" />
+    </div>
+  </div>
+  <div class="footer__links">
+    <p class="footer__links__copyright">© 2025 <a href="http://www.drupal.pt/" target="_blank">Associação Drupal Portugal</a> & <a href="https://asociaciondrupal.es/" target="_blank">Asociación Española de Drupal</a></p>
+    <div>
+      {{ content }}
+    </div>
+  </div>
+</footer>
