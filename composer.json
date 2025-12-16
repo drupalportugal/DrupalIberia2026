@@ -9,6 +9,7 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html"
     },
     "require": {
+        "amazeeio/drupal_integrations": "^0.5.0",
         "bower-asset/colorbox": "^1.6",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
@@ -27,6 +28,7 @@
         "drupal/extlink": "^2.0",
         "drupal/gin": "^5.0",
         "drupal/gin_login": "^2.1",
+        "drupal/lagoon_logs": "^3.0",
         "drupal/link_attributes": "^2.1",
         "drupal/linkit": "^7.0",
         "drupal/media_entity_download": "^2.4",
@@ -36,6 +38,7 @@
         "drupal/paragraphs": "^1.18",
         "drupal/r4032login": "^2.2",
         "drupal/redirect": "^1.11",
+        "drupal/redis": "^1.11",
         "drupal/schema_metatag": "^3.0",
         "drupal/simple_sitemap": "^4.2",
         "drupal/sitemap": "^2.0",
@@ -119,7 +122,14 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/all.settings.php": "assets/all.settings.php",
+                "[web-root]/sites/redis-unavailable.services.yml": "assets/redis-unavailable.services.yml"
+            },
+            "allowed-packages": [
+                "amazeeio/drupal_integrations"
+            ]
         },
         "installer-paths": {
             "web/core": [
@@ -158,8 +168,8 @@
         ],
         "patches": {
             "drupal/event_platform": {
-                "Add support to multiple categories in session content type": "./patches/scheduler-support-multiple-categories.patch",
-                "Order slot times by weight in scheduler": "./patches/scheduler-order-slots-by-weight.patch"
+                "Add support to multiple categories in session content type": "./assets/patches/scheduler-support-multiple-categories.patch",
+                "Order slot times by weight in scheduler": "./assets/patches/scheduler-order-slots-by-weight.patch"
             },
             "drupal/field_group": {
                 "#3495221: Add $form and $form_state parameters to formatter plugins' settingsForm method Add $form and $form_state parameters to formatter plugins' settingsForm method": "https://www.drupal.org/files/issues/2024-12-20/3495221-4.patch"
