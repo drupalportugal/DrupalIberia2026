@@ -1,0 +1,7 @@
+# amazee
+/all.settings.php
+/default.development.services.yml
+/settings.lagoon.php
+
+# ddev
+/settings.ddev.php
