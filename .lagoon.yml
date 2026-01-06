@@ -21,7 +21,7 @@ environments:
     routes:
       - nginx:
           - 2026.drupaliberia.eu:
-              tls-acme: 'false'
+              tls-acme: 'true'
               wildcard: true
               insecure: Redirect
               hsts: max-age=31536000;includeSubDomains;preload
