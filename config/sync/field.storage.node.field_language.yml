@@ -18,8 +18,8 @@ settings:
       value: en
       label: Inglés
     -
-      value: gl
-      label: Gallego
+      value: pt
+      label: Portugués
   allowed_values_function: ''
 module: options
 locked: false
