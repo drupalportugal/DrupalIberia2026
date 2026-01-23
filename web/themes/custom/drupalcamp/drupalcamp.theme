@@ -92,7 +92,7 @@ function drupalcamp_preprocess_email_wrap(array &$variables): void {
   $variables['front_page'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString();
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
   $theme_path = \Drupal::service('extension.list.theme')->getPath('drupalcamp');
-  $variables['logo'] = \Drupal::service('file_url_generator')->generateAbsoluteString($theme_path . '/logo-white.png');
+  $variables['logo'] = \Drupal::service('file_url_generator')->generateAbsoluteString($theme_path . '/logo-mail.png');
 }
 
 /**

@@ -1,5 +1,5 @@
 h1, h2, h3, p, a {
-  color: #293156;
+  color: #0e8044;
   font-size: 16px;
   line-height: 24px;
   mso-line-height-rule: exactly;
@@ -28,7 +28,7 @@ table {
 .main-cell {}
 
 .header-cell {
-  background-color: #293156;
+  background-color: #7a9f89;
   padding: 20px;
 }
 

@@ -1,14 +1,14 @@
 uuid: 73e036ed-c759-485c-9b77-dab849a68b03
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
     - workflows.workflow.editorial
     - workflows.workflow.session_acceptance
 id: session_validated
-label: 'Sesión validada'
+label: 'Session validated'
 format: plain_text
-subject: 'Sesión "[node:title]" publicada en [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
+subject: 'Session "[node:title]" published in [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
 recipient_types:
   author:
     id: author
@@ -17,7 +17,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\nTu sesión ha sido publicada y es posible visitarla en el listado de sesiones propuestas y en [node:url].\r\n\r\nRecuerda: asegúrate de rellenar todos los campos (foto, biografía, etc.) de tu perfil de persona usuaria en [node:author:edit-url].\r\n\r\nEn [site:url]/criterios-de-seleccion-de-charlas y [site:url]/guia-para-ponentes encontrarás respuesta a las preguntas más frecuentes relacionadas con las intervenciones. Responde a este correo electrónico si tienes más preguntas.\r\n\r\nGracias de nuevo por enviar la propuesta,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]"
+  value: "Hello,\r\n\r\nYour session has been published and is now visible in the list of proposed sessions and at [node:url].\r\n\r\nReminder: please make sure to complete all the fields in your user profile (photo, bio, etc.) at [node:author:edit-url].\r\n\r\nFeel free to reply to this email if you have any additional questions.\r\n\r\nThanks again for submitting your proposal,\r\n\r\n-- The [config_page:event_details:field_event_name] [config_page:event_details:field_event_year] team"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:

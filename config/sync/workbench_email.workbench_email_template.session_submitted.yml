@@ -1,5 +1,5 @@
 uuid: 99d4e5d0-e93e-40c7-8a62-9519b15e9ae9
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: lasF02_9chyECp4XSiZB3HDBnjenDE5LHO9WEaPVcvM
 id: session_submitted
-label: 'Sesión enviada'
+label: 'Session submitted'
 format: plain_text
-subject: 'Sesión "[node:title]" enviada a [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
+subject: 'Session "[node:title]" submitted to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]'
 recipient_types:
   author:
     id: author
@@ -19,7 +19,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\nEn nombre de nuestro equipo, gracias por enviar tu sesión \"[node:title]\" a [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. Queremos trasladarte nuestro enorme agradecimiento.\r\n\r\nTu sesión ya está disponible en [node:url], pero será publicada una vez que el equipo local revise y confirme que todo el contenido es correcto. Recibirás un correo electrónico cuando esto ocurra.\r\n\r\nImportante: asegúrate de rellenar todos los campos (foto, biografía, etc.) de tu perfil de usuario/a en [node:author:edit-url].\r\n\r\nEn [site:url]/criterios-de-seleccion-de-charlas y [site:url]/guia-para-ponentes encontrarás respuesta a las preguntas más frecuentes relacionadas con las intervenciones. Responde a este correo electrónico si tienes más preguntas.\r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]\r\n\r\n"
+  value: "Hello,\r\n\r\nOn behalf of our team, THANK YOU for submitting your \"[node:title]\" session to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year].\r\n\r\nWe are beyond grateful and appreciative.\r\n\r\nYour session is viewable at [node:url] and you may edit it at [node:edit-url].\r\n\r\nImportant: Please be sure to fill out all fields (including photo, bio, etc) in your user profile at [current-user:edit-url].\r\n\r\nReply to this email if you have any additional questions. \r\n\r\nThanks again,\r\n\r\nThe [config_page:event_details:field_event_name] planning team\r\n\r\n"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:

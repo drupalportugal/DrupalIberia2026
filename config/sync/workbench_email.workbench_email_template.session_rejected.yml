@@ -1,5 +1,5 @@
 uuid: b9e17a66-e457-47cc-8e7a-2f896f9311c5
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: QEyK9DzPHN_KkdZWGhhhv4NyjY4XA8eKY8zylCjk7Vs
 id: session_rejected
-label: 'Sesión rechazada'
+label: 'Session rejected'
 format: plain_text
-subject: 'Sesión de [config_page:event_details:field_event_name], [node:title]'
+subject: '[config_page:event_details:field_event_name] Session, [node:title]'
 recipient_types:
   author:
     id: author
@@ -19,7 +19,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hola,\r\n\r\nEn nombre de nuestro equipo, gracias por enviar tu sesión \"[node:title]\" a [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. Queremos trasladarte nuestro enorme agradecimiento.\r\n\r\nLamentablemente, no pudimos aceptar todas las excelentes sesiones que se presentaron, y esta sesión no pasó el corte de esta edición. \r\n\r\nNo obstante, esperamos verte en [config_page:event_details:field_event_location_short] este año. Si tienes alguna pregunta, ponte en contacto con la organización. \r\n\r\nGracias de nuevo,\r\n\r\n-- Equipo de [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]\r\n"
+  value: "On behalf of our team, THANK YOU for submitting your \"[node:title]\" session to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]. \r\n\r\nWe are beyond grateful and appreciative.\r\n\r\nUnfortunately, we could not accept all of the excellent sessions that were submitted, and this session did not make this year's cut. \r\n\r\nNevertheless, we still hope to see you in [config_page:event_details:field_event_location_short] this year.\r\n\r\nPlease reach out and let us know if you have any questions. \r\n\r\nThanks again,\r\n\r\nThe [config_page:event_details:field_event_name] planning team"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:
