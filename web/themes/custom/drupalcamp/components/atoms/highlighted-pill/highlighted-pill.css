@@ -10,8 +10,8 @@
 }
 
 .highlighted-pill--active {
-  background-color: var(--color--secondary);
-  color: var(--color--primary);
+  background-color: var(--color--primary);
+  color: #ffffff;
 }
 
 .highlighted-pill--has-link {
@@ -20,8 +20,8 @@
 
 .highlighted-pill--has-link:hover {
   text-decoration: none;
-  background-color: var(--color--secondary);
-  color: var(--color--primary);
+  background-color: var(--color--primary);
+  color: #ffffff;
   border-color: var(--color--primary);
   text-shadow: 0 0 1px var(--color--primary);
 }

@@ -1,13 +1,13 @@
 uuid: d3a1316c-012d-434b-9900-1929ad31377b
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
     - node
-id: sessions_es
-label: Sesiones
+id: sessions
+label: Sessions
 type: 'canonical_entities:node'
-pattern: 'sesiones/[node:title]'
+pattern: 'sessions/[node:title]'
 selection_criteria:
   2f46f3fe-490d-4795-929f-29f57d75e0a1:
     id: 'entity_bundle:node'
@@ -19,6 +19,4 @@ selection_criteria:
       session: session
 selection_logic: and
 weight: -10
-relationships:
-  'node:langcode:language':
-    label: Idioma
+relationships: {  }

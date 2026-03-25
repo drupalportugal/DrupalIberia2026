@@ -1,5 +1,5 @@
 uuid: 79f3c783-ff96-480c-ab27-fc030e753f73
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
@@ -13,13 +13,13 @@ settings:
   allowed_values:
     -
       value: es
-      label: Español
+      label: Spanish
     -
       value: en
-      label: Inglés
+      label: English
     -
       value: pt
-      label: Portugués
+      label: Portuguese
   allowed_values_function: ''
 module: options
 locked: false

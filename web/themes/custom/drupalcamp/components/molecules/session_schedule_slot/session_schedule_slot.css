@@ -24,6 +24,7 @@
   border-radius: 20px;
   padding: 16px 6px 16px 6px;
   background-color: var(--color--secondary);
+  color: #ffffff;
   font-family: var(--font-family-h);
   font-size: var(--session-schedule-hour-column-font-size);
   line-height: var(--session-schedule-hour-column-line-height);
@@ -89,7 +90,7 @@
 
 @media (min-width: 1200px) {
   .session-schedule-slot__content {
-    --session-schedule--column-count: 4;
+    --session-schedule--column-count: 2;
   }
 }
 

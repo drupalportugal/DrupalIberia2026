@@ -1,11 +1,11 @@
 uuid: 85ef6695-55d4-40b8-a916-325a3b01720c
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
 id: taxonomy_terms
-label: 'Términos de taxonomía'
+label: Terms
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:vocabulary:name]/[term:name]'
 selection_criteria: {  }

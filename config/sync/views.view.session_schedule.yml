@@ -1,5 +1,5 @@
 uuid: 6355f44d-e8a4-4cce-95aa-c262a683f2df
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
 _core:
   default_config_hash: fcrda_QBnWUY_CTcFbjLqgOfm1M5FimII1JNgz4qIpQ
 id: session_schedule
-label: 'Session Schedule'
+label: 'Schedule'
 module: views
 description: ''
 tag: ''
@@ -29,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Programa
+      title: Schedule
       fields:
         field_when:
           id: field_when
@@ -166,10 +166,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Limpiar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -321,7 +321,7 @@ display:
               field: field_when
               rendered: true
               rendered_strip: false
-          columns: 4
+          columns: 2
           cell_min_width: 250
           grid_gutter: 10
           alignment: horizontal
@@ -362,7 +362,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Auditorio: Balidea</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala 1: Hiberus</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala 2: AED</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Sala Talleres</div>\r\n        </div>\r\n    </div>\r\n</div>"
+            value: "<div class=\"session-schedule-slot session-schedule--header\">\r\n    <div class=\"session-schedule-slot__title\"></div>\r\n    <div class=\"session-schedule-slot__content\">\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Room 1</div>\r\n        </div>\r\n        <div class=\"session-schedule-slot__item\">\r\n            <div class=\"highlighted-pill highlighted-pill--color-primary\">Room 2</div>\r\n        </div>\r\n    </div>\r\n</div>"
             format: full_html
           tokenize: false
       footer: {  }

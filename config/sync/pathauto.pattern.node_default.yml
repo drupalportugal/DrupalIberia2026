@@ -1,11 +1,11 @@
 uuid: 4aa453f6-16fc-4518-8b12-36817b81392b
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
     - node
 id: node_default
-label: 'Por defecto'
+label: 'Default node'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria: {  }

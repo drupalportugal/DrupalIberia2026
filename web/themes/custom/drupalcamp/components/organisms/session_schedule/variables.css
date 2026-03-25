@@ -4,6 +4,6 @@
   --session-schedule-hour-column-padding: 10px;
   --session-schedule-hour-column-font-size: 1.563rem;
   --session-schedule-hour-column-line-height: 1.4em;
-  --session-schedule--column-count: 4;
+  --session-schedule--column-count: 2;
   --session-schedule--layout-gap: 1em;
 }
