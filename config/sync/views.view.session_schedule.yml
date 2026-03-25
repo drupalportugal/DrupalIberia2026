@@ -16,7 +16,7 @@ dependencies:
 _core:
   default_config_hash: fcrda_QBnWUY_CTcFbjLqgOfm1M5FimII1JNgz4qIpQ
 id: session_schedule
-label: 'Schedule'
+label: Schedule
 module: views
 description: ''
 tag: ''

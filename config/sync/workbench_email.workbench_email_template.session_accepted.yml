@@ -19,7 +19,7 @@ recipient_types:
     settings: {  }
 bundles: {  }
 body:
-  value: "Hello,\r\n\r\nCongratulations! Your \"[node:title]\" session ([node:url]) was successfully accepted to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]!\r\n\r\nNote that this email only goes to the author of the node, so please inform any additional speakers for this session. \r\n\r\nPlease reply to this email indicating that you are are able to do this session in person. \r\n\r\nReply to this email if you have any additional questions. \r\n\r\nThanks again,\r\n\r\nThe [config_page:event_details:field_event_name] planning team\r\n\r\n"
+  value: "Hello,\r\n\r\nCongratulations! Your \"[node:title]\" session ([node:url]) was successfully accepted to [config_page:event_details:field_event_name] [config_page:event_details:field_event_year]!\r\n\r\nNote that this email only goes to the author of the node, so please inform any additional speakers for this session. \r\n\r\nPlease reply to this email indicating that you are are able to do this session in person as soon as possible.\r\n\r\nYou can check the session schedule at [site:base-url]/sessions/schedule\r\n\r\nReply to this email if you have any additional questions. \r\n\r\nThanks again,\r\n\r\nThe [config_page:event_details:field_event_name] planning team\r\n\r\n"
   format: plain_text
 replyTo: '[site:mail]'
 transitions:
