@@ -1,5 +1,5 @@
 uuid: 023d5fea-fcc9-458d-a09d-0bffbfd4ad9f
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,9 +12,9 @@ id: node.sponsor.field_sponsor_level
 field_name: field_sponsor_level
 entity_type: node
 bundle: sponsor
-label: 'Nivel de patrocinador'
+label: 'Sponsor level'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

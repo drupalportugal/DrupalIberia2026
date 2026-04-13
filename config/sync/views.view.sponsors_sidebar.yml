@@ -1,12 +1,11 @@
 uuid: 04964678-1413-4d16-8e7c-c48cd3ede979
-langcode: es
-status: true
+langcode: en
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_sponsor_level
     - node.type.sponsor
-    - taxonomy.vocabulary.sponsor_level
   module:
     - node
     - taxonomy
@@ -14,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: e_jg05AUmjUGKm5sXYDKgWArzb-AYzp42nSgNZNMe-E
 id: sponsors_sidebar
-label: 'Sponsors Sidebar'
+label: 'Sponsors sidebar'
 module: views
 description: ''
 tag: ''
@@ -23,11 +22,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: 'Default'
     display_plugin: default
     position: 0
     display_options:
-      title: Patrocinadores
+      title: Sponsors
       fields:
         field_sponsor_level:
           id: field_sponsor_level
@@ -151,10 +150,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Limpiar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Clean
+          exposed_sorts_label: 'Order by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -222,53 +221,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            32: 32
-            33: 33
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: sponsor_level
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       style:
         type: default
         options:
@@ -307,22 +259,13 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.node.field_sponsor_level'
   block_1:
     id: block_1
-    display_title: Bloque
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
@@ -332,16 +275,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.featured_speaker.default'
-        - 'config:core.entity_view_display.node.featured_speaker.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.session.default'
-        - 'config:core.entity_view_display.node.session.teaser'
-        - 'config:core.entity_view_display.node.sponsor.default'
-        - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:field.storage.node.field_sponsor_level'

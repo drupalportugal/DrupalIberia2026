@@ -1,5 +1,5 @@
 uuid: fb5cffef-0b16-4095-a54f-85cc07ce9c2f
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
@@ -19,7 +19,7 @@ dependencies:
 _core:
   default_config_hash: qjZEIsXkHWhxrAx0GJzrvRHjssMg_6QLNeTIeF6rnek
 id: all_sponsors
-label: Patrocinadores
+label: Sponsors
 module: views
 description: ''
 tag: ''
@@ -28,11 +28,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: 'Default'
     display_plugin: default
     position: 0
     display_options:
-      title: Patrocinadores
+      title: Sponsors
       fields:
         field_is_individual:
           id: field_is_individual
@@ -485,10 +485,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Limpiar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Order by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -544,48 +544,6 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        langcode:
-          id: langcode
-          table: taxonomy_term_field_data
-          field: langcode
-          relationship: field_sponsor_level
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         type:
           id: type
           table: node_field_data
@@ -681,7 +639,7 @@ display:
           group_type: group
           admin_label: 'field_sponsor_level: Taxonomy term'
           plugin_id: standard
-          required: true
+          required: false
       show_admin_links: true
       header: {  }
       footer: {  }
@@ -700,7 +658,7 @@ display:
         - 'config:field.storage.taxonomy_term.field_is_individual'
   block_1:
     id: block_1
-    display_title: Bloque
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
@@ -725,10 +683,11 @@ display:
         - 'config:field.storage.taxonomy_term.field_is_individual'
   page_1:
     id: page_1
-    display_title: Página
+    display_title: Page
     display_plugin: page
     position: 2
     display_options:
+      enabled: false
       display_extenders: {  }
       path: sponsors
       menu:
@@ -755,10 +714,11 @@ display:
         - 'config:field.storage.taxonomy_term.field_is_individual'
   page_2:
     id: page_2
-    display_title: 'Página 2'
+    display_title: 'Page 2'
     display_plugin: page
     position: 3
     display_options:
+      enabled: false
       title: 'Sponsor List w URLs (for Salim)'
       fields:
         field_sponsor_level:
